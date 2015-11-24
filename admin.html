@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Admin-UMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/login.js"></script>
+  </head>
+  <body onload="initAdmin()" style="overflow:hidden">
+    <header><div class"wrap">
+      <div class="htitle">User Management System</div>
+      <div id="adminName"></div>
+    </div>
+    </header>
+
+    <div class="adminLeftPane">
+      <div class="adminLeftPaneWrap">
+        <img class="img-circle"src="./images/admin.png" alt="admin"/>
+        <p>Admin</p>
+        <button type="button" id="addUserButton" onclick="addUser()">Add User</button>
+        <button type="button" id="addUserButton" onclick="addGroup()">Add Group</button>
+        <button type="button" id="addUserButton" onclick="assignUser()">Assign User</button>
+        <button type="button" id="addUserButton" onclick="unassignUser()">unAssign User</button>
+        <!--button type="button" id="addUserButton" onclick="displayAssignedUsers()">Groups with users</button-->
+      </div>
+    </div>
+    <div class="admin">
+      <div class="adminUser">
+        <table class="bordered" id="addUsers"><thead><tr><th>S.No</th><th>Available Users</th><th>Manage</th></tr></thead></table>
+      </div>
+      <div class="adminGroup">
+        <table class="bordered" id="addGroups">
+            <thead><tr><th>S.No</th><th>Available Groups</th><th>Manage</th></tr></thead></table>
+      </div>
+      <div class="adminUserGroup">
+        <table class="bordered" id="userGroup"><thead><tr><th>S.No</th><th>Group</th><th>Users Assigned</th></tr></thead></table>
+      </div>
+    </div>
+  </body>
+</html>
