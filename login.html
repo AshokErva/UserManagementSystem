@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Login-UMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+    <link rel="stylesheet" href="./css/main.css">
+
+  </head>
+  <body>
+    <header><div class"wrap"><div class="htitle">User Management System</div></div></header>
+    <div class="login2">
+      <p class="header"><u>Login</u></p>
+      <form name="login" action="admin.html" onsubmit="return Authenticate()" method="post">
+        <p class="login">Admin</p>
+        <input type="text" name="admin" placeholder="Admin Id">
+        <p class="login">Password</p>
+        <p><input type="password" name="pwd" placeholder="Password" ></p>
+        <p><input type="submit" value="Submit"></p>
+        <p id="errorMsg"></p>
+      </form>
+      <script src="./js/login.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
