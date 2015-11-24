@@ -1,0 +1,97 @@
+/*
+  @author: Ashok Erva
+  @date: November 01, 2015
+*/
+body{
+  background-color:#FFFAFA;background-repeat: no-repeat;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+  	font-style: normal;font-variant: normal;line-height: 26.4px;body{min-width:400px;}
+}
+.wrap{position: relative;margin:0, auto;width:auto;}p.header{font-size: 20px;text-align: center;}p.login{font-size: 14px;color: #fff;text-align: left;}
+@media only screen and (max-device-width:350px){
+       /* styles for mobile browsers smaller than 350px; (iPhone) */
+       header{z-index: 1;position: fixed;left:0;height:50px;top:0;right: 0;background-color: #4169E1;color: #fff;box-shadow:  0px 0px 10px #888888;}
+       .htitle{margin:5px;padding:5px;font-size: 16px;color:rgb(0,0,);}.login2{margin-top:90px; margin-left: -5px;margin-right: 5px;border-radius: 25px;background: #4169E1;width:285px;height:200px;padding: 15px;color:#fff;box-shadow: 0px 0px 5px 0px #888888;}
+       p {margin: 0px;font-size: 12px;}
+      input[type=text],input[type=password] {width:95%;margin-left:0;padding:5px; border:3px solid #fff;-webkit-border-radius: 5px;border-radius: 5px;}
+      input[type=text],input[type=password]:focus {border-color:#fff;}
+      input[type=submit] {margin-top: 10px;width:100%;padding:5px 15px; background:#fff;border:3px solid #fff;cursor:pointer;font-family: inherit;-webkit-border-radius: 5px;border-radius: 5px;}
+      .admin{margin-left:10px;margin-right: 10px;margin-top: 50px;width:80%;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
+      .adminLeftPane{left:0; top:50px; background-color: #ededed;position: fixed;height:100%;width:50px;box-shadow:  0px 0px 10px #888888;}
+      .adminLeftPaneWrap{margin-top: 30px;}
+      .img-circle {border-radius: 50%;width:50px;}
+      .adminUser, .adminGroup, .adminUserGroup{width:auto;padding: 5px;font-family: inherit;margin-left:40px;}
+      */#adminName{margin-top: -48px;top:0px;margin-right:5px;float:right;right: 2px;font-size: 12px;}
+      #button{padding:3px 3px;font-size: 10px;background-color: #4169E1;border:1px solid #fff; -webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;color:#fff;cursor: pointer;outline:none;}
+      #addUserButton{margin-left: 3px;width:40px;padding:5px 5px;font-size: 8px;background-color: #4169E1; -webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;color:#fff;cursor: pointer;outline:none;}
+      .bordered {width:100px;}.bordered td, .bordered th {padding: 5px;}
+}
+
+@media only screen and (min-device-width:355px) and (max-device-width:610px){
+       /* for long display phones */
+       header{z-index: 1;position: fixed;left:0;height:50px;top:0;right: 0;background-color: #4169E1;color: #fff;box-shadow:  0px 0px 10px #888888;}
+       .htitle{margin:5px;padding:5px;font-size: 18px;color:rgb(0,0,);}.login2{margin-top:90px; margin-left: -2px;margin-right: 5px;border-radius: 25px;background: #4169E1;width:320px;height:200px;padding: 15px;color:#fff;box-shadow: 0px 0px 5px 0px #888888;}
+       p {margin: 2px;font-size: 12px;}p.login{font-size: 18px;color: #fff;text-align: left;}
+       input[type=text],input[type=password] {width:95%;margin-left:0;padding:5px; border:3px solid #fff;-webkit-border-radius: 5px;border-radius: 5px;}
+         input[type=text],input[type=password]:focus {border-color:#fff;}input[type=submit] {margin-top: 10px;width:100%;padding:5px 15px; background:#fff;border:3px solid #fff;
+         cursor:pointer;font-family: inherit;-webkit-border-radius: 5px;border-radius: 5px; }
+         .admin{margin-left:30px;margin-right: 30px;margin-top: 50px;width:80%;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
+         .adminLeftPane{left:0; top:50px; background-color: #ededed;position: fixed;height:100%;width:75px;box-shadow:  0px 0px 10px #888888;}
+         .adminLeftPaneWrap{margin-top: 30px;}.img-circle {border-radius: 50%;width:50px;}
+         .adminUser, .adminGroup, .adminUserGroup{width:auto;padding: 5px;font-family: inherit;margin-left:55px;}
+         #adminName{margin-top: -48px;top:0px;margin-right:5px;float:right;right: 2px;font-size: 14px;}
+         #button{padding:3px 3px;font-size: 12px;background-color: #4169E1;border:1px solid #fff; -webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;color:#fff;cursor: pointer;outline:none;}
+         #addUserButton{margin-left: 3px;width:68px;padding:5px 5px;font-size: 12px;background-color: #4169E1; -webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;color:#fff;cursor: pointer;outline:none;}
+         .bordered {width:100px;}.bordered td, .bordered th {padding: 5px;}
+}
+
+@media only screen and (min-device-width:768px){
+       /* for tablets) */
+       header{z-index: 1;position: fixed;left:0;height:50px;top:0;right: 0;background-color: #4169E1;color: #fff;box-shadow:  0px 0px 10px #888888;}
+       .htitle{margin:5px;padding:5px;font-size: 18px;color:rgb(0,0,);} .login2{margin:100px;margin-top: 200px;border-radius: 25px;background: #4169E1;width:420px;height:300px;padding: 15px;color:#fff;box-shadow: 0px 0px 5px 0px #888888;}
+       p {margin: 12px;}p.header{font-size: 24px;text-align: center;}p.login{font-size: 22px;color: #fff;text-align: left;}
+       input[type=text],input[type=password],input[type=submit]{border:3px solid #fff;-webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;}
+       input[type=text] {width:89%;margin-left:15px;padding:5px 8px;font-size: 16px;}input[type=password] {width:95%;margin-left:0;padding:5px 8px;font-size: 16px;}
+       input[type=submit] {margin-top: 10px;width:100%;padding:5px 15px;font-size: 20px;cursor:pointer;background-color: #fff;}
+       input[type=text],input[type=password]:focus {border-color:#fff; }
+       .admin{margin-left:20% ;margin-right: 10px;margin-top: 10%;width:80%;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
+       .adminLeftPane{left:0; top:50px; background-color: #ededed;position: fixed;height:100%;width:140px;box-shadow:  0px 0px 10px #888888;}
+       .adminLeftPaneWrap{margin-top: 30px;margin-left:15px;}.img-circle {border-radius: 50%;width:50px;margin-left:15px;}
+       .adminUser, .adminGroup, .adminUserGroup{width:30%;padding: 5px;font-family: inherit;margin-left:20%;}
+       #adminName{margin-top: -48px;top:0px;margin-right:70px;float:right;right: 2px;font-size: 16px;}
+       #button{padding:3px 3px;font-size: 16px;background-color: #4169E1;border:1px solid #fff; -webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;color:#fff;cursor: pointer;outline:none;}
+       #addUserButton{width:110px;padding:5px 15px;font-size: 14px;background-color: #4169E1; -webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;color:#fff;cursor: pointer;outline:none;}
+       .bordered {width:350px;} .bordered td, .bordered th {padding: 10px;}
+}
+
+@media only screen and (min-device-width:1280px){
+       /* for all laptops, desktop systems */
+       header{z-index: 1;position: fixed;left:0;height:70px;top:0;right: 0;background-color: #4169E1;color: #fff;box-shadow:  0px 0px 10px #888888;}
+       .htitle{margin:5px;padding:15px;font-size: 25px;color:rgb(0,0,);}
+       .login2{margin-left:30%;margin-top: 200px;border-radius: 25px;background: #4169E1;width:420px;height:300px;padding: 15px;color:#fff;box-shadow: 0px 0px 5px 0px #888888;}
+       p {margin: 10px;}p.header{font-size: 24px;text-align: center;}p.login{font-size: 20px;color: #fff;text-align: left;}
+       input[type=text],input[type=password],input[type=submit]{border:3px solid #fff; -webkit-border-radius: 5px;border-radius: 5px; font-family: inherit;}
+       input[type=text] {width:89%;margin-left:15px;padding:5px 8px;font-size: 16px;}input[type=password] {width:95%;margin-left:0;padding:5px 8px;font-size: 16px;}
+       input[type=submit] {margin-top: 10px;width:100%;padding:5px 15px;font-size: 20px;background-color: #fff;}input[type=text],input[type=password]:focus {border-color:#fff; }
+       .admin{margin-left:0%;margin-top: 10%;width:90%;clear:both;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;}
+       .adminLeftPane{left:0px; top:0px;background-color: #ededed;position: fixed;height:100%;width:15%;box-shadow:  0px 0px 10px #888888;} .adminLeftPaneWrap{margin-top: 100px;margin-left: 30px;}
+       .img-circle {border-radius: 50%;width:100px;}.adminUser{width:10%;float:left;padding: 5px;margin-left: 17%;}
+       .adminGroup{width:10%;float:left;font-family: inherit;padding: 5px;}.adminUserGroup{width:10%;padding: 5px;float:left}
+       #adminName{margin-top: -30px;margin-right: 7%;}#button{margin-top: -20px;padding:5px 15px;font-size: 16px;background-color: #4169E1;border:2px solid #fff; -webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;color:#fff;cursor: pointer;position: fixed;outline:none;}
+       #addUserButton{width:150px;padding:5px 15px;font-size: 14px;background-color: #4169E1;border:2px solid #fff; -webkit-border-radius: 5px;border-radius: 5px;font-family: inherit;color:#fff;cursor: pointer;outline:none;}
+       .bordered {width:350px;}.bordered td, .bordered th {padding: 10px;}
+}
+.table { *border-collapse: collapse;border-spacing: 0;width: 100%;}
+.bordered {border: solid #ccc 1px;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;-webkit-box-shadow: 0 1px 1px #ccc;-moz-box-shadow: 0 1px 1px #ccc;box-shadow: 0 1px 1px #ccc;}
+.bordered tr:hover {background: #ededed;-o-transition: all 0.1s ease-in-out;-webkit-transition: all 0.1s ease-in-out;-moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;transition: all 0.1s ease-in-out;}
+.bordered td, .bordered th {border-left: 1px solid #ccc;border-top: 1px solid #ccc;text-align: left;}
+.bordered th {background-color: #dce9f9;background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;border-top: none;text-shadow: 0 1px 0 rgba(255,255,255,.5);}
+.bordered td:first-child, .bordered th:first-child {border-left: none;}
+.bordered th:first-child {-moz-border-radius: 6px 0 0 0;-webkit-border-radius: 6px 0 0 0;border-radius: 6px 0 0 0;}
+.bordered th:last-child {-moz-border-radius: 0 6px 0 0;-webkit-border-radius: 0 6px 0 0;border-radius: 0 6px 0 0;}
+.bordered th:only-child{-moz-border-radius: 6px 6px 0 0;-webkit-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;}
+.bordered tr:last-child td:first-child {-moz-border-radius: 0 0 0 6px;-webkit-border-radius: 0 0 0 6px;border-radius: 0 0 0 6px;}
+.bordered tr:last-child td:last-child {-moz-border-radius: 0 0 6px 0;-webkit-border-radius: 0 0 6px 0;border-radius: 0 0 6px 0;}
